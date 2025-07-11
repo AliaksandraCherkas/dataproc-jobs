@@ -1,3 +1,3 @@
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'dags/*', 'gs://my-code-bucket-airbnb/']
+    args: ['-m', 'cp', '-r', 'jobs/*', 'gs://my-code-bucket-airbnb/']
