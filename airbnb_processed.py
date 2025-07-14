@@ -81,7 +81,7 @@ reviews_df.write.format("bigquery") \
 
 calendar_df = calendar_df \
     .withColumn("rental_category", when(col("minimum_nights") <= 7, "short_term")
-                                     .when((col("minimum_nights") > 7) & (col("minimum_nights") < 30), "medium_term")
+                                     .when((col("minimum_nights") > 7) & (col("minimum_nights") <= 30), "medium_term")
                                      .otherwise("long_term")) \
     .dropna(subset=["listing_id", "date"])
 
