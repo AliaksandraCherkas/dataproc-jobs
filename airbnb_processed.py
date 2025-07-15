@@ -4,7 +4,7 @@ from pyspark.sql.types import DateType
 import pyspark.sql.functions as F
 
 spark = SparkSession.builder \
-    .appName("Load Airbnb fact and dim tables to BigQuery") \
+    .appName("Load Airbnb tables to BigQuery") \
     .getOrCreate()
 
 # Read your existing parquet data

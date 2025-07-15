@@ -1,6 +1,6 @@
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 steps:
-  - name: 'gcr.io/cloud-builders/gsutil'
+  - name: 'gcr.io/cloud-builders/cloud-sdk'
     args: ['-m', 'cp', '-r', '.', 'gs://my-code-bucket-airbnb/dataproc-jobs/']
 
