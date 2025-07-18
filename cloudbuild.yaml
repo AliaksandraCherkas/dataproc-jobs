@@ -2,5 +2,5 @@ options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', '*.py', 'gs://my-code-bucket-airbnb/dataproc-jobs/']
+    args: ['cp', '/code_base/*', 'gs://my-code-bucket-airbnb/dataproc-jobs/']
 
