@@ -6,7 +6,7 @@ from pyspark.sql.functions import (
 
 # Initialize Spark session
 spark = SparkSession.builder \
-    .appName("Load Airbnb fact and dim tables to BigQuery") \
+    .appName("Load Airbnb tables to BigQuery") \
     .getOrCreate()
 
 # Read parquet files
