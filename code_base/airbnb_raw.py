@@ -29,6 +29,7 @@ def process_dataset(input_path, output_path):
         sep=",",
         quote='"',
         escape='"',
+        multiLine=True,
         mode="PERMISSIVE"
     ).csv(input_path)
     
